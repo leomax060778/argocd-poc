@@ -24,7 +24,7 @@ spec:
           valueFiles:
             - "configs/{{path[2]}}/{{path.basename}}/values.yaml"
             - "configs/{{path[2]}}/values.yaml"
-        # path: demo
+        path: ./
         repoURL: https://github.com/leomax060778/argocd-poc
         targetRevision: HEAD
       syncPolicy:

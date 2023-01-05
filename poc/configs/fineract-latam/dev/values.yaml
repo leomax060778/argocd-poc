@@ -52,34 +52,8 @@ env:
   FINERACT_DEFAULT_TENANTDB_PWD: "mysql"
 
 service:
-  type: ClusterIP
-  servicePorts:
-    - port: 8080
-      containerPort: 8080
-      protocol: TCP
-      name: http
-    - port: 8443
-      containerPort: 8443
-      protocol: TCP
-      name: job-port
-      # service_disabled: true
-  autoscaling:
-    enabled: false
-    minReplicas: 1
-    maxReplicas: 3
-    targetCPUUtilizationPercentage: 80
-    targetMemoryUtilizationPercentage: 80
-  serviceAccount:
-    name: application-sa
-  ingress:
-    enabled: false
-  resources:
-    requests:
-      cpu: 1024m
-      memory: 2048Mi
-    limits:
-      cpu: 2048m
-      memory: 3096Mi
+  type: NodePort
+  port: 8443
 
 ## Application level settings  
 appMode: dev

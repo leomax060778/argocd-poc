@@ -16,7 +16,7 @@ fullnameOverride: ""
 
 service:
   type: NodePort
-  port: 30008
+  port: 30006
 
 
 ## Application level settings  

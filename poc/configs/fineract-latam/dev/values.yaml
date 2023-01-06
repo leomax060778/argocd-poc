@@ -6,11 +6,11 @@ replicaCount: 1
 
 image:
   repository: 916148231619.dkr.ecr.us-east-2.amazonaws.com/latam-backend
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
-imagePullSecrets: regecr
+imagePullSecrets: [regecr]
 nameOverride: ""
 fullnameOverride: ""
 

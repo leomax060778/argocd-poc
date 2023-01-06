@@ -5,12 +5,13 @@
 replicaCount: 1
 
 image:
-  repository: 916148231619.dkr.ecr.us-east-2.amazonaws.com/latam-backend
+  repository: leonardohildt/fineract-app
+  # 916148231619.dkr.ecr.us-east-2.amazonaws.com/latam-backend
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: "2022-12-30--12-47"
 
-imagePullSecrets: [regecr]
+imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 

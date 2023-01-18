@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: fineract-rest-ui
-          image: docker.io/hero78/moniafrica-ui-latest-v1.8.0:latest
+          image: leonardohildt/mifos-app
           imagePullPolicy: Always
           ports:
             - containerPort: 80

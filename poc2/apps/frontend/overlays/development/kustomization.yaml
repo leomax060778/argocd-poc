@@ -1,5 +1,9 @@
-namePrefix: -dev
+namePrefix: dev-
 commonLabels:
   variant: dev
+commonAnnotations:
+  note: "Welcome to development!"
 resources:
   - ../../base
+patchesStrategicMerge:
+  - config-map.yaml

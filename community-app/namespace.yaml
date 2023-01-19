@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: fineract-rest-ui
   labels:
+    app.kubernetes.io/instance: mifos
     name: fineract-rest-ui
+  name: fineract-rest-ui

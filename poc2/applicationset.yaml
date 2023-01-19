@@ -8,17 +8,17 @@ spec:
     - git:
         repoURL: https://github.com/leomax060778/argocd-poc
         revision: HEAD
-        directories:
-          - path: poc2/apps/*/*
+        files:
+          - path: poc2/apps/**/kustomization.yml
   template:
     metadata:
-      name: "{{path[2]}}-{{path.basename}}"
+      name: '{{.cluster.name}}-{{path.basename}}'
     spec:
       project: default
       source:
         repoURL: https://github.com/leomax060778/argocd-poc
         targetRevision: HEAD
-        path: poc2/apps/{{path[2]}}/{{path.basename}}/{{name}}
+        path: poc2/apps/
       syncPolicy:
         automated:
           prune: true

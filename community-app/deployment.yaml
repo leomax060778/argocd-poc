@@ -1,27 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mifos
-  namespace: mifos
+  name: fineract-rest-ui
   labels:
-    app: mifos
+    app: fineract-rest-ui
     tier: frontend
 spec:
   selector:
     matchLabels:
-      app: mifos
+      app: fineract-rest-ui
       tier: frontend
-      instance: mifos
+      instance: fineract-rest-ui
   replicas: 1
   template:
     metadata:
       labels:
-        app: mifos
+        app: fineract-rest-ui
         tier: frontend
-        instance: mifos
+        instance: fineract-rest-ui
     spec:
       containers:
-        - name: mifos
+        - name: fineract-rest-ui
           image: leonardohildt/mifos-app
           imagePullPolicy: Always
           ports:

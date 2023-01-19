@@ -1,10 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mifos
-  namespace: mifos
+  name: fineract-rest-ui
   labels:
-    app: mifos
+    app: fineract-rest-ui
     tier: frontend
 spec:
   type: NodePort
@@ -14,6 +13,6 @@ spec:
       port: 80
       targetPort: 80
   selector:
-    app: mifos
+    app: fineract-rest-ui
     tier: frontend
-    instance: mifos
+    instance: fineract-rest-ui

@@ -1,0 +1,8 @@
+namespace: fb-dev
+
+commonLabels:
+  app.kubernetes.io/instance: fb
+  example.com/stage: dev
+
+resources:
+- namespace.yaml

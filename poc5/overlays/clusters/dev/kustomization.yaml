@@ -1,0 +1,6 @@
+bases:
+- ../../tenant-envs/albo/dev
+- ../../tenant-envs/albo/test
+
+commonLabels:
+  example.com/region: eu

@@ -1,0 +1,8 @@
+namespace: albo-dev
+
+commonLabels:
+  app.kubernetes.io/instance: albo
+  example.com/stage: dev
+
+resources:
+- namespace.yaml

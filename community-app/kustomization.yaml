@@ -6,8 +6,8 @@ commonLabels:
 
 resources:
   - namespace.yaml
-  - deployment.yml
-  - service.yml
+  - deployment.yaml
+  - service.yaml
 
 images:
   - name: leonardohildt/mifos-app

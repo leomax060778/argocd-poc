@@ -9,15 +9,11 @@ spec:
   selector:
     matchLabels:
       app: fineract-rest-ui
-      tier: frontend
-      instance: fineract-rest-ui
   replicas: 1
   template:
     metadata:
       labels:
         app: fineract-rest-ui
-        tier: frontend
-        instance: fineract-rest-ui
     spec:
       containers:
         - name: fineract-rest-ui

@@ -6,10 +6,10 @@ spec:
   #goTemplate: true
   generators:
     - git:
-        repoURL: https://github.com/argoproj/argo-cd.git
+        repoURL: https://github.com/leomax060778/argocd-poc.git
         revision: HEAD
         files:
-        - path: "applicationset/examples/git-generator-files-discovery/cluster-config/**/config.json"
+        - path: "git-generator-files-discovery/cluster-config/**/config.json"
   template:
     metadata:
       name: '{{.cluster.name}}-guestbook'
@@ -18,7 +18,7 @@ spec:
       source:
         repoURL: https://github.com/argoproj/argo-cd.git
         targetRevision: HEAD
-        path: "applicationset/examples/git-generator-files-discovery/apps/guestbook"
+        path: "git-generator-files-discovery/apps/guestbook"
       destination:
         server: https://kubernetes.default.svc
         #server: '{{.cluster.address}}'

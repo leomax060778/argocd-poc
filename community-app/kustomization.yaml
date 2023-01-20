@@ -6,4 +6,4 @@ resources:
 - service.yaml
 images:
 - name: leonardohildt/mifos-app
-  newTag: 08fe213
+  newTag: 120ed89

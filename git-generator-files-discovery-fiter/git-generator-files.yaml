@@ -3,7 +3,7 @@ kind: ApplicationSet
 metadata:
   name: guestbook
 spec:
-  goTemplate: true
+  #goTemplate: true
   generators:
     - git:
         repoURL: https://github.com/argoproj/argo-cd.git

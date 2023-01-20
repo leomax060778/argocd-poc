@@ -8,7 +8,7 @@ spec:
     namespace: mifos
     server: "https://kubernetes.default.svc"
   source:
-    path: community-app
+    path: community-app/manifests
     repoURL: "https://github.com/leomax060778/argocd-poc"
     targetRevision: HEAD
   project: default
